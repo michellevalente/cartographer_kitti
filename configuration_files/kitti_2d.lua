@@ -26,6 +26,5 @@ TRAJECTORY_BUILDER_2D.missing_data_ray_length = 5.
 TRAJECTORY_BUILDER_2D.use_imu_data = true  -- TODO(macmason): Enable the IMU.
 TRAJECTORY_BUILDER_2D.use_online_correlative_scan_matching = true
 TRAJECTORY_BUILDER_2D.submaps.range_data_inserter.insert_free_space = true
-TRAJECTORY_BUILDER_2D.submaps.output_debug_images = true
   
 return options

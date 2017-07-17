@@ -14,10 +14,10 @@
 <launch>
   <param name="/use_sim_time" value="true" />
 
-  <include file="$(find cartographer_ros)/launch/kitti_3d.launch" />
+  <include file="$(find cartographer_kitti)/launch/kitti_3d.launch" />
 
   <node name="rviz" pkg="rviz" type="rviz" required="true"
-    args="-d $(find cartographer_ros)/configuration_files/kitti_3d_new.rviz">
+    args="-d $(find cartographer_kitti)/configuration_files/kitti_3d_new.rviz">
   </node>
   <node name="playbag" pkg="rosbag" type="play" args="--clock -r 0.5 $(arg bag_filename)">
     <remap from="/kitti/oxts/imu" to="/imu" />
